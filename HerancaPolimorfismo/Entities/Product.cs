@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Text;
+﻿using System.Globalization;
 
 namespace HerancaPolimorfismo.Entities
 {
@@ -15,7 +12,7 @@ namespace HerancaPolimorfismo.Entities
             Name = name;
             Price = price;
         }
-        public virtual string priceTag()
+        public virtual string PriceTag()
         {
             return Name + " $ " + Price.ToString("F2", CultureInfo.InvariantCulture);
         }
